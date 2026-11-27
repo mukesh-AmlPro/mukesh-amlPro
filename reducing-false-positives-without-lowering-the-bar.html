@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reducing false positives without lowering the bar | Mukesh Kumar</title>
+<meta name="description" content="Practical lessons on alert optimisation in transaction monitoring: improve decision quality first, then volume, and keep every tuning decision defensible.">
+<meta name="author" content="Mukesh Kumar">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://mukesh-amlpro.netlify.app/reducing-false-positives-without-lowering-the-bar.html">
+<meta name="theme-color" content="#13233f">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mukesh Kumar">
+<meta property="og:title" content="Reducing false positives without lowering the bar | Mukesh Kumar">
+<meta property="og:description" content="Practical lessons on alert optimisation in transaction monitoring: improve decision quality first, then volume, and keep every tuning decision defensible.">
+<meta property="og:url" content="https://mukesh-amlpro.netlify.app/reducing-false-positives-without-lowering-the-bar.html">
+<meta property="og:image" content="https://mukesh-amlpro.netlify.app/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/public-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/spectral-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5HQB2ZX3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E5HQB2ZX3Q');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Reducing false positives without lowering the bar",
+  "description": "Practical lessons on alert optimisation in transaction monitoring: improve decision quality first, then volume, and keep every tuning decision defensible.",
+  "author": {
+    "@id": "https://mukesh-amlpro.netlify.app/#person",
+    "@type": "Person",
+    "name": "Mukesh Kumar"
+  },
+  "datePublished": "2026-11-27",
+  "inLanguage": "en-IN",
+  "mainEntityOfPage": "https://mukesh-amlpro.netlify.app/reducing-false-positives-without-lowering-the-bar.html"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="/">Mukesh Kumar<small>Principal Officer (AML/CFT), CAMS</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#leadership">Leadership &amp; Governance</a></li>
+      <li><a href="/#experience">Experience</a></li>
+      <li><a href="/#expertise">Expertise</a></li>
+      <li><a href="/insights.html" aria-current="page">Insights</a></li>
+      <li><a href="/#credentials">Credentials</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<div class="article-hero on-navy">
+  <div class="prose-head">
+    <p class="crumbs"><a href="/insights.html">Insights &amp; Perspectives</a></p>
+    <h1>Reducing false positives without lowering the bar</h1>
+    <p>Mukesh Kumar, CAMS · Operations · November 2026</p>
+  </div>
+</div>
+<article class="prose">
+<p>Every monitoring team wants fewer false positives. The risk is that "fewer alerts" quietly becomes the goal and the system stops seeing what it was built to see. When I led a transaction monitoring team, the reduction we achieved came from better decisions, not from switching rules off.</p>
+<h2>Fix the decision before the rule</h2>
+<p>Inconsistent dispositions create noise of their own. If two analysts close the same pattern differently, any tuning built on that history inherits the inconsistency. The first step was a shared standard for a good investigation, supported by QA sampling and feedback analysts could act on the same week.</p>
+<h2>Let the evidence choose the rules to tune</h2>
+<p>Once dispositions were reliable, closed-alert data showed which scenarios produced little of value and why: thresholds set without regard to customer segment, rules firing on activity already explained by the customer's profile, and duplicate alerts for the same underlying behaviour. Each has a specific fix, and each fix can be written down with its rationale.</p>
+<h2>Keep the bar where it is</h2>
+<ul>
+<li>Test tuning changes against historical true positives before deploying them. If a change would have missed a filed SAR or STR, it does not go live.</li>
+<li>Route the highest-risk alerts first so queue pressure never forces rushed decisions on the cases that matter.</li>
+<li>Track quality, turnaround and productivity together. Improving one at the expense of the others is not an improvement.</li>
+</ul>
+<p>The goal is a monitoring programme where analysts spend their time on alerts that deserve it, and where every tuning decision could be explained to an auditor or regulator from the record alone.</p>
+<p class="disclaimer">Personal perspective for general information. Not legal advice, and not a statement of any employer's position or practices.</p>
+
+<p><a class="btn btn-ghost" href="/insights.html">Back to all articles</a></p>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Mukesh Kumar, CAMS · Gurugram, India</p>
+    <p>Views expressed on this site are personal and do not represent any employer.</p>
+    <p><a href="/">Home</a> · <a href="/insights.html">Insights</a> · <a href="https://www.linkedin.com/in/mukeshkumarabh01" rel="noopener">LinkedIn</a> · <a href="/#contact">Contact</a></p>
+  </div>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>
