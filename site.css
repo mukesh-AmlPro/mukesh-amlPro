@@ -146,6 +146,9 @@ section { padding: var(--s7) 0; }
 .role-head .place { grid-column: 1; font-size: .9rem; color: var(--muted); }
 .timeline ul { margin-top: .6rem; max-width: 80ch; list-style: disc; }
 .timeline li li { font-size: .97rem; }
+.timeline .role-intro { margin: .6rem 0 0; max-width: 80ch; }
+.timeline .role-sub { font-family: inherit; font-size: .95rem; font-weight: 600; color: var(--navy); margin: 1rem 0 0; }
+.timeline .role-sub + ul { margin-top: .35rem; }
 @media (max-width: 620px) { .role-head { grid-template-columns: 1fr; } .role-head time, .role-head .dates { grid-column: 1; grid-row: auto; } }
 
 /* capability areas */
